@@ -31,9 +31,9 @@ public class Hooks {
 // driver.set(new AndroidDriver(new URL("http://0.0.0.0:4723/"), capabilities));
 		
 		UiAutomator2Options capabilities = new UiAutomator2Options();
-        capabilities.setDeviceName("RahulPhone");                  
+        capabilities.setDeviceName("RahulPhone");  //optional
         capabilities.setUdid("emulator-5554"); //To run automation on Android device/emulator this field setup is mandatory                    
-        capabilities.setPlatformName("Android"); 
+        capabilities.setPlatformName("Android"); //optional 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities);
 		System.out.println("Driver lanched succssfully");
 	}
