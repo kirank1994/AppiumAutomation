@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSuite.TestClass2">
+      <class name="testSuite.HomePageTestClass">
         <methods>
           <include name="ConfigureAppium"/>
-          <include name="TeseCaseValidation"/>
+          <include name="ScrollExample"/>
           <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testSuite.TestClass2 -->
+      </class> <!-- testSuite.HomePageTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

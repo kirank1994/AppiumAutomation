@@ -1,88 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="10" total="16" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-04T15:33:54 IST" name="Default suite" finished-at="2025-08-04T15:34:06 IST" duration-ms="11963">
+  <suite started-at="2025-08-10T13:07:13 IST" name="Suite" finished-at="2025-08-10T13:07:33 IST" duration-ms="19755">
     <groups>
     </groups>
-    <test started-at="2025-08-04T15:33:54 IST" name="Default test" finished-at="2025-08-04T15:34:06 IST" duration-ms="11963">
-      <class name="testSuite.TestClass2">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:testSuite.TestClass2@5552768b]" started-at="2025-08-04T15:33:54 IST" name="ConfigureAppium" finished-at="2025-08-04T15:33:55 IST" duration-ms="1854" status="PASS">
+    <test started-at="2025-08-10T13:07:13 IST" name="Test" finished-at="2025-08-10T13:07:33 IST" duration-ms="19755">
+      <class name="testSuite.CartPageTestClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.CartPageTestClass@2f8dad04]" started-at="2025-08-10T13:07:31 IST" name="setup" finished-at="2025-08-10T13:07:31 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Scenario3()[pri:0, instance:testSuite.CartPageTestClass@2f8dad04]" started-at="2025-08-10T13:07:31 IST" name="Scenario3" finished-at="2025-08-10T13:07:33 IST" duration-ms="1342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario3 -->
+        <test-method signature="Scenario4()[pri:0, instance:testSuite.CartPageTestClass@2f8dad04]" started-at="2025-08-10T13:07:33 IST" name="Scenario4" finished-at="2025-08-10T13:07:33 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario4 -->
+      </class> <!-- testSuite.CartPageTestClass -->
+      <class name="testSuite.AccountPageTestClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.AccountPageTestClass@2bfc268b]" started-at="2025-08-10T13:07:29 IST" name="setup" finished-at="2025-08-10T13:07:29 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Scenario3()[pri:0, instance:testSuite.AccountPageTestClass@2bfc268b]" started-at="2025-08-10T13:07:29 IST" name="Scenario3" finished-at="2025-08-10T13:07:31 IST" duration-ms="2255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario3 -->
+      </class> <!-- testSuite.AccountPageTestClass -->
+      <class name="testSuite.HomePageTestClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.HomePageTestClass@696da30b]" started-at="2025-08-10T13:07:15 IST" name="setup" finished-at="2025-08-10T13:07:15 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ScrollExample()[pri:0, instance:testSuite.HomePageTestClass@696da30b]" started-at="2025-08-10T13:07:15 IST" name="ScrollExample" finished-at="2025-08-10T13:07:20 IST" duration-ms="4532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollExample -->
+      </class> <!-- testSuite.HomePageTestClass -->
+      <class name="baseClass.Hooks">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:baseClass.Hooks@2177849e]" started-at="2025-08-10T13:07:13 IST" name="ConfigureAppium" finished-at="2025-08-10T13:07:15 IST" duration-ms="1954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="TeseCaseValidation()[pri:0, instance:testSuite.TestClass2@5552768b]" started-at="2025-08-04T15:33:55 IST" name="TeseCaseValidation" finished-at="2025-08-04T15:34:06 IST" duration-ms="10089" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '24.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [faa4df71-c90b-4cab-96a1-08b11bec78c2, findElement {value=//android.widget.TextView[@text="Brand Mall "]/../following-sibling::android.view.ViewGroup[1], using=xpath}]
-Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, deviceName: Pixel 7 pro, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 16, appium:statBarHeight: 144, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: faa4df71-c90b-4cab-96a1-08b11bec78c2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.4.1', java.version: '24.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [faa4df71-c90b-4cab-96a1-08b11bec78c2, findElement {value=//android.widget.TextView[@text="Brand Mall "]/../following-sibling::android.view.ViewGroup[1], using=xpath}]
-Capabilities {appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, deviceName: Pixel 7 pro, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 16, appium:statBarHeight: 144, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: faa4df71-c90b-4cab-96a1-08b11bec78c2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at testSuite.TestClass2.TeseCaseValidation(TestClass2.java:12)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TeseCaseValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSuite.TestClass2@5552768b]" started-at="2025-08-04T15:34:06 IST" name="tearDown" finished-at="2025-08-04T15:34:06 IST" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:baseClass.Hooks@2177849e]" started-at="2025-08-10T13:07:33 IST" name="tearDown" finished-at="2025-08-10T13:07:33 IST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testSuite.TestClass2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- baseClass.Hooks -->
+      <class name="testSuite.PlayPageTestClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.PlayPageTestClass@4e7912d8]" started-at="2025-08-10T13:07:20 IST" name="setup" finished-at="2025-08-10T13:07:20 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Scenario3()[pri:0, instance:testSuite.PlayPageTestClass@4e7912d8]" started-at="2025-08-10T13:07:20 IST" name="Scenario3" finished-at="2025-08-10T13:07:21 IST" duration-ms="1576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario3 -->
+      </class> <!-- testSuite.PlayPageTestClass -->
+      <class name="testSuite.CategoriesPageTestClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.CategoriesPageTestClass@53976f5c]" started-at="2025-08-10T13:07:21 IST" name="setup" finished-at="2025-08-10T13:07:21 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Scenario2()[pri:0, instance:testSuite.CategoriesPageTestClass@53976f5c]" started-at="2025-08-10T13:07:21 IST" name="Scenario2" finished-at="2025-08-10T13:07:29 IST" duration-ms="7523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario2 -->
+      </class> <!-- testSuite.CategoriesPageTestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
