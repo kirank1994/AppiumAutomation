@@ -30,7 +30,7 @@ public void clickOnHome()
 
 public void scrollUntilTheElement(String element)
 {
-	scrollUntilElement(element,sponsored,"Sponsored");
+	scrollUntilElement(element,sponsored);
 }
 
 

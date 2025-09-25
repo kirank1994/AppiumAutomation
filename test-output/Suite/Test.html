@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 10 13:07:13 IST 2025</td>
+<td>Started on:</td><td>Sun Sep 14 07:56:46 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19755 ms)</td>
+<tr><td>Total time:</td><td>259 seconds (259198 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,95 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testSuite.CategoriesPageTestClass.Scenario2()'><b>Scenario2</b><br>Test class: testSuite.CategoriesPageTestClass</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$4EC20TVX.sendKeys(Unknown Source)
+	at utils.CommonUtils.sendKeysOnElement(CommonUtils.java:119)
+	at pages.CategoriesPage.sendKeysOnElement(CategoriesPage.java:47)
+	at testSuite.CategoriesPageTestClass.Scenario2(CategoriesPageTestClass.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1870234754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1870234754'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$4EC20TVX.sendKeys(Unknown Source)
+	at utils.CommonUtils.sendKeysOnElement(CommonUtils.java:119)
+	at pages.CategoriesPage.sendKeysOnElement(CategoriesPage.java:47)
+	at testSuite.CategoriesPageTestClass.Scenario2(CategoriesPageTestClass.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testSuite.CategoriesPageTestClass@4c5474f5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,35 +165,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testSuite.HomePageTestClass.ScrollExample()'><b>ScrollExample</b><br>Test class: testSuite.HomePageTestClass</td>
-<td></td>
-<td>4</td>
-<td>testSuite.HomePageTestClass@696da30b</td></tr>
-<tr>
-<td title='testSuite.CartPageTestClass.Scenario3()'><b>Scenario3</b><br>Test class: testSuite.CartPageTestClass</td>
-<td></td>
-<td>1</td>
-<td>testSuite.CartPageTestClass@2f8dad04</td></tr>
-<tr>
-<td title='testSuite.CategoriesPageTestClass.Scenario2()'><b>Scenario2</b><br>Test class: testSuite.CategoriesPageTestClass</td>
-<td></td>
-<td>7</td>
-<td>testSuite.CategoriesPageTestClass@53976f5c</td></tr>
-<tr>
 <td title='testSuite.AccountPageTestClass.Scenario3()'><b>Scenario3</b><br>Test class: testSuite.AccountPageTestClass</td>
 <td></td>
-<td>2</td>
-<td>testSuite.AccountPageTestClass@2bfc268b</td></tr>
+<td>6</td>
+<td>testSuite.AccountPageTestClass@2f4205be</td></tr>
+<tr>
+<td title='testSuite.BottomNavigationBarDataProvider.testMethod()'><b>testMethod</b><br>Test class: testSuite.BottomNavigationBarDataProvider<br>Parameters: //android.view.ViewGroup[@content-desc='Categories'], Categories</td>
+<td></td>
+<td>1</td>
+<td>testSuite.BottomNavigationBarDataProvider@3c9bfddc</td></tr>
 <tr>
 <td title='testSuite.PlayPageTestClass.Scenario3()'><b>Scenario3</b><br>Test class: testSuite.PlayPageTestClass</td>
 <td></td>
+<td>113</td>
+<td>testSuite.PlayPageTestClass@319bc845</td></tr>
+<tr>
+<td title='testSuite.BottomNavigationBarDataProvider.testMethod()'><b>testMethod</b><br>Test class: testSuite.BottomNavigationBarDataProvider<br>Parameters: //android.view.ViewGroup[@content-desc='Account'], Account</td>
+<td></td>
 <td>1</td>
-<td>testSuite.PlayPageTestClass@4e7912d8</td></tr>
+<td>testSuite.BottomNavigationBarDataProvider@3c9bfddc</td></tr>
+<tr>
+<td title='testSuite.BottomNavigationBarDataProvider.testMethod()'><b>testMethod</b><br>Test class: testSuite.BottomNavigationBarDataProvider<br>Parameters: //android.view.ViewGroup[@content-desc='Cart'], Cart</td>
+<td></td>
+<td>1</td>
+<td>testSuite.BottomNavigationBarDataProvider@3c9bfddc</td></tr>
+<tr>
+<td title='testSuite.BottomNavigationBarDataProvider.testMethod()'><b>testMethod</b><br>Test class: testSuite.BottomNavigationBarDataProvider<br>Parameters: //android.view.ViewGroup[@content-desc='Play'], Play</td>
+<td></td>
+<td>3</td>
+<td>testSuite.BottomNavigationBarDataProvider@3c9bfddc</td></tr>
+<tr>
+<td title='testSuite.HomePageTestClass.ScrollExample()'><b>ScrollExample</b><br>Test class: testSuite.HomePageTestClass</td>
+<td></td>
+<td>120</td>
+<td>testSuite.HomePageTestClass@1a9c38eb</td></tr>
 <tr>
 <td title='testSuite.CartPageTestClass.Scenario4()'><b>Scenario4</b><br>Test class: testSuite.CartPageTestClass</td>
 <td></td>
+<td>2</td>
+<td>testSuite.CartPageTestClass@54e22bdd</td></tr>
+<tr>
+<td title='testSuite.BottomNavigationBarDataProvider.testMethod()'><b>testMethod</b><br>Test class: testSuite.BottomNavigationBarDataProvider<br>Parameters: //android.view.ViewGroup[@content-desc='Home'], Home</td>
+<td></td>
 <td>0</td>
-<td>testSuite.CartPageTestClass@2f8dad04</td></tr>
+<td>testSuite.BottomNavigationBarDataProvider@3c9bfddc</td></tr>
+<tr>
+<td title='testSuite.BottomNavigationBarDataProvider.testMethod()'><b>testMethod</b><br>Test class: testSuite.BottomNavigationBarDataProvider<br>Parameters: //android.view.ViewGroup[@content-desc='Home'], Home</td>
+<td></td>
+<td>0</td>
+<td>testSuite.BottomNavigationBarDataProvider@3c9bfddc</td></tr>
+<tr>
+<td title='testSuite.CartPageTestClass.Scenario3()'><b>Scenario3</b><br>Test class: testSuite.CartPageTestClass</td>
+<td></td>
+<td>2</td>
+<td>testSuite.CartPageTestClass@54e22bdd</td></tr>
 </table><p>
 </body>
 </html>

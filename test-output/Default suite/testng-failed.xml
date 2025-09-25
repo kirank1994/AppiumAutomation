@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSuite.HomePageTestClass">
+      <class name="testSuite.AccountPageTestClass">
         <methods>
           <include name="ConfigureAppium"/>
-          <include name="ScrollExample"/>
-          <include name="tearDown"/>
+          <include name="Scenario3"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testSuite.HomePageTestClass -->
+      </class> <!-- testSuite.AccountPageTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

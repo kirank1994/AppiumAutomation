@@ -9,15 +9,58 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,755</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">259,198</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testSuite.AccountPageTestClass</td><td><a href="#m0">Scenario3</a></td><td rowspan="1">1754811449462</td><td rowspan="1">2255</td></tr><tr class="passedodd"><td rowspan="2">testSuite.CartPageTestClass</td><td><a href="#m1">Scenario3</a></td><td rowspan="1">1754811451726</td><td rowspan="1">1342</td></tr><tr class="passedodd"><td><a href="#m2">Scenario4</a></td><td rowspan="1">1754811453071</td><td rowspan="1">360</td></tr><tr class="passedeven"><td rowspan="1">testSuite.CategoriesPageTestClass</td><td><a href="#m3">Scenario2</a></td><td rowspan="1">1754811441925</td><td rowspan="1">7523</td></tr><tr class="passedodd"><td rowspan="1">testSuite.HomePageTestClass</td><td><a href="#m4">ScrollExample</a></td><td rowspan="1">1754811435799</td><td rowspan="1">4532</td></tr><tr class="passedeven"><td rowspan="1">testSuite.PlayPageTestClass</td><td><a href="#m5">Scenario3</a></td><td rowspan="1">1754811440341</td><td rowspan="1">1576</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testSuite.CategoriesPageTestClass</td><td><a href="#m0">Scenario2</a></td><td rowspan="1">1757817052161</td><td rowspan="1">2332</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testSuite.AccountPageTestClass</td><td><a href="#m1">Scenario3</a></td><td rowspan="1">1757817054763</td><td rowspan="1">6054</td></tr><tr class="passedodd"><td rowspan="6">testSuite.BottomNavigationBarDataProvider</td><td><a href="#m2">testMethod</a></td><td rowspan="6">1757816813082</td><td rowspan="6">1412</td></tr><tr class="passedodd"><td><a href="#m3">testMethod</a></td></tr><tr class="passedodd"><td><a href="#m4">testMethod</a></td></tr><tr class="passedodd"><td><a href="#m5">testMethod</a></td></tr><tr class="passedodd"><td><a href="#m6">testMethod</a></td></tr><tr class="passedodd"><td><a href="#m7">testMethod</a></td></tr><tr class="passedeven"><td rowspan="2">testSuite.CartPageTestClass</td><td><a href="#m8">Scenario3</a></td><td rowspan="1">1757817060825</td><td rowspan="1">2362</td></tr><tr class="passedeven"><td><a href="#m9">Scenario4</a></td><td rowspan="1">1757817063190</td><td rowspan="1">2830</td></tr><tr class="passedodd"><td rowspan="1">testSuite.HomePageTestClass</td><td><a href="#m10">ScrollExample</a></td><td rowspan="1">1757816817765</td><td rowspan="1">120569</td></tr><tr class="passedeven"><td rowspan="1">testSuite.PlayPageTestClass</td><td><a href="#m11">Scenario3</a></td><td rowspan="1">1757816938343</td><td rowspan="1">113810</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testSuite.AccountPageTestClass#Scenario3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testSuite.CartPageTestClass#Scenario3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testSuite.CartPageTestClass#Scenario4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testSuite.CategoriesPageTestClass#Scenario2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testSuite.HomePageTestClass#ScrollExample</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testSuite.PlayPageTestClass#Scenario3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testSuite.CategoriesPageTestClass#Scenario2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$4EC20TVX.sendKeys(Unknown Source)
+	at utils.CommonUtils.sendKeysOnElement(CommonUtils.java:119)
+	at pages.CategoriesPage.sendKeysOnElement(CategoriesPage.java:47)
+	at testSuite.CategoriesPageTestClass.Scenario2(CategoriesPageTestClass.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testSuite.AccountPageTestClass#Scenario3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testSuite.BottomNavigationBarDataProvider#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>//android.view.ViewGroup[@content-desc=&apos;Categories&apos;]</td><td>Categories</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testSuite.BottomNavigationBarDataProvider#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>//android.view.ViewGroup[@content-desc=&apos;Account&apos;]</td><td>Account</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testSuite.BottomNavigationBarDataProvider#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>//android.view.ViewGroup[@content-desc=&apos;Cart&apos;]</td><td>Cart</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testSuite.BottomNavigationBarDataProvider#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>//android.view.ViewGroup[@content-desc=&apos;Play&apos;]</td><td>Play</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testSuite.BottomNavigationBarDataProvider#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>//android.view.ViewGroup[@content-desc=&apos;Home&apos;]</td><td>Home</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testSuite.BottomNavigationBarDataProvider#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>//android.view.ViewGroup[@content-desc=&apos;Home&apos;]</td><td>Home</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testSuite.CartPageTestClass#Scenario3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testSuite.CartPageTestClass#Scenario4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testSuite.HomePageTestClass#ScrollExample</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testSuite.PlayPageTestClass#Scenario3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,6 +1,8 @@
 package testSuite;
 
 import org.openqa.selenium.By;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import baseClass.Hooks;
@@ -106,5 +108,9 @@ public AppiumDriver driver;
 	//@Test
 	public void SwapExample() {
 		swipeByCoordinates((AndroidDriver) driver, 738, 624, 350, 624);
+	}
+	@AfterMethod
+	public void tearDown(ITestResult result) {
+	    testStatus(result);
 	}
 }

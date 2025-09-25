@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2">
+	<test thread-count="1" name="Test">
+		<classes>
+			<class name="baseClass.Hooks"></class>
+			<class name="testSuite.BottomNavigationBarDataProvider"></class>
+			<class name="testSuite.HomePageTestClass" />
+			<class name="testSuite.PlayPageTestClass" />
+			<class name="testSuite.CategoriesPageTestClass" />
+			<class name="testSuite.AccountPageTestClass" /> 
+	 		<class name="testSuite.CartPageTestClass" /> 
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

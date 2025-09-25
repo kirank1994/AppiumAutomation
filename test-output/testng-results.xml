@@ -1,74 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="16" passed="6" failed="0" skipped="0">
+<testng-results ignored="12" total="24" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-10T13:07:13 IST" name="Suite" finished-at="2025-08-10T13:07:33 IST" duration-ms="19755">
+  <suite started-at="2025-09-14T07:56:46 IST" name="Suite" finished-at="2025-09-14T08:01:06 IST" duration-ms="259198">
     <groups>
     </groups>
-    <test started-at="2025-08-10T13:07:13 IST" name="Test" finished-at="2025-08-10T13:07:33 IST" duration-ms="19755">
+    <test started-at="2025-09-14T07:56:46 IST" name="Test" finished-at="2025-09-14T08:01:06 IST" duration-ms="259198">
       <class name="testSuite.CartPageTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.CartPageTestClass@2f8dad04]" started-at="2025-08-10T13:07:31 IST" name="setup" finished-at="2025-08-10T13:07:31 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.CartPageTestClass@54e22bdd]" started-at="2025-09-14T08:01:00 IST" name="setup" finished-at="2025-09-14T08:01:00 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Scenario3()[pri:0, instance:testSuite.CartPageTestClass@2f8dad04]" started-at="2025-08-10T13:07:31 IST" name="Scenario3" finished-at="2025-08-10T13:07:33 IST" duration-ms="1342" status="PASS">
+        <test-method signature="Scenario3()[pri:0, instance:testSuite.CartPageTestClass@54e22bdd]" started-at="2025-09-14T08:01:00 IST" name="Scenario3" finished-at="2025-09-14T08:01:03 IST" duration-ms="2362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario3 -->
-        <test-method signature="Scenario4()[pri:0, instance:testSuite.CartPageTestClass@2f8dad04]" started-at="2025-08-10T13:07:33 IST" name="Scenario4" finished-at="2025-08-10T13:07:33 IST" duration-ms="360" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.CartPageTestClass@54e22bdd]" started-at="2025-09-14T08:01:03 IST" name="tearDown" finished-at="2025-09-14T08:01:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Scenario3 status=SUCCESS method=CartPageTestClass.Scenario3()[pri:0, instance:testSuite.CartPageTestClass@54e22bdd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Scenario4()[pri:0, instance:testSuite.CartPageTestClass@54e22bdd]" started-at="2025-09-14T08:01:03 IST" name="Scenario4" finished-at="2025-09-14T08:01:06 IST" duration-ms="2830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.CartPageTestClass@54e22bdd]" started-at="2025-09-14T08:01:06 IST" name="tearDown" finished-at="2025-09-14T08:01:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Scenario4 status=SUCCESS method=CartPageTestClass.Scenario4()[pri:0, instance:testSuite.CartPageTestClass@54e22bdd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testSuite.CartPageTestClass -->
       <class name="testSuite.AccountPageTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.AccountPageTestClass@2bfc268b]" started-at="2025-08-10T13:07:29 IST" name="setup" finished-at="2025-08-10T13:07:29 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.AccountPageTestClass@2f4205be]" started-at="2025-09-14T08:00:54 IST" name="setup" finished-at="2025-09-14T08:00:54 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Scenario3()[pri:0, instance:testSuite.AccountPageTestClass@2bfc268b]" started-at="2025-08-10T13:07:29 IST" name="Scenario3" finished-at="2025-08-10T13:07:31 IST" duration-ms="2255" status="PASS">
+        <test-method signature="Scenario3()[pri:0, instance:testSuite.AccountPageTestClass@2f4205be]" started-at="2025-09-14T08:00:54 IST" name="Scenario3" finished-at="2025-09-14T08:01:00 IST" duration-ms="6054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario3 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.AccountPageTestClass@2f4205be]" started-at="2025-09-14T08:01:00 IST" name="tearDown" finished-at="2025-09-14T08:01:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Scenario3 status=SUCCESS method=AccountPageTestClass.Scenario3()[pri:0, instance:testSuite.AccountPageTestClass@2f4205be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testSuite.AccountPageTestClass -->
       <class name="testSuite.HomePageTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.HomePageTestClass@696da30b]" started-at="2025-08-10T13:07:15 IST" name="setup" finished-at="2025-08-10T13:07:15 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.HomePageTestClass@1a9c38eb]" started-at="2025-09-14T07:56:57 IST" name="setup" finished-at="2025-09-14T07:56:57 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ScrollExample()[pri:0, instance:testSuite.HomePageTestClass@696da30b]" started-at="2025-08-10T13:07:15 IST" name="ScrollExample" finished-at="2025-08-10T13:07:20 IST" duration-ms="4532" status="PASS">
+        <test-method signature="ScrollExample()[pri:0, instance:testSuite.HomePageTestClass@1a9c38eb]" started-at="2025-09-14T07:56:57 IST" name="ScrollExample" finished-at="2025-09-14T07:58:58 IST" duration-ms="120569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScrollExample -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.HomePageTestClass@1a9c38eb]" started-at="2025-09-14T07:58:58 IST" name="tearDown" finished-at="2025-09-14T07:58:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ScrollExample status=SUCCESS method=HomePageTestClass.ScrollExample()[pri:0, instance:testSuite.HomePageTestClass@1a9c38eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testSuite.HomePageTestClass -->
       <class name="baseClass.Hooks">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:baseClass.Hooks@2177849e]" started-at="2025-08-10T13:07:13 IST" name="ConfigureAppium" finished-at="2025-08-10T13:07:15 IST" duration-ms="1954" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:baseClass.Hooks@1dd6d4b7]" started-at="2025-09-14T07:56:46 IST" name="ConfigureAppium" finished-at="2025-09-14T07:56:48 IST" duration-ms="2094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:baseClass.Hooks@2177849e]" started-at="2025-08-10T13:07:33 IST" name="tearDown" finished-at="2025-08-10T13:07:33 IST" duration-ms="354" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:baseClass.Hooks@1dd6d4b7]" started-at="2025-09-14T08:01:06 IST" name="tearDown" finished-at="2025-09-14T08:01:06 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- baseClass.Hooks -->
-      <class name="testSuite.PlayPageTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.PlayPageTestClass@4e7912d8]" started-at="2025-08-10T13:07:20 IST" name="setup" finished-at="2025-08-10T13:07:20 IST" duration-ms="4" status="PASS">
+      <class name="testSuite.BottomNavigationBarDataProvider">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:48 IST" name="setup" finished-at="2025-09-14T07:56:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Scenario3()[pri:0, instance:testSuite.PlayPageTestClass@4e7912d8]" started-at="2025-08-10T13:07:20 IST" name="Scenario3" finished-at="2025-08-10T13:07:21 IST" duration-ms="1576" status="PASS">
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:48 IST" name="testMethod" data-provider="testData" finished-at="2025-09-14T07:56:49 IST" duration-ms="332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup[@content-desc='Home']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:49 IST" name="tearDown" finished-at="2025-09-14T07:56:49 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=BottomNavigationBarDataProvider.testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:49 IST" name="testMethod" data-provider="testData" finished-at="2025-09-14T07:56:53 IST" duration-ms="3810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup[@content-desc='Play']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Play]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:53 IST" name="tearDown" finished-at="2025-09-14T07:56:53 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=BottomNavigationBarDataProvider.testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:53 IST" name="testMethod" data-provider="testData" finished-at="2025-09-14T07:56:54 IST" duration-ms="1412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup[@content-desc='Categories']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Categories]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:54 IST" name="tearDown" finished-at="2025-09-14T07:56:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=BottomNavigationBarDataProvider.testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:54 IST" name="testMethod" data-provider="testData" finished-at="2025-09-14T07:56:56 IST" duration-ms="1773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup[@content-desc='Account']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:56 IST" name="tearDown" finished-at="2025-09-14T07:56:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=BottomNavigationBarDataProvider.testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:56 IST" name="testMethod" data-provider="testData" finished-at="2025-09-14T07:56:57 IST" duration-ms="1162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup[@content-desc='Cart']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cart]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:57 IST" name="tearDown" finished-at="2025-09-14T07:56:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=BottomNavigationBarDataProvider.testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:57 IST" name="testMethod" data-provider="testData" finished-at="2025-09-14T07:56:57 IST" duration-ms="118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup[@content-desc='Home']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc]" started-at="2025-09-14T07:56:57 IST" name="tearDown" finished-at="2025-09-14T07:56:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=BottomNavigationBarDataProvider.testMethod(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BottomNavigationBarDataProvider@3c9bfddc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testSuite.BottomNavigationBarDataProvider -->
+      <class name="testSuite.PlayPageTestClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.PlayPageTestClass@319bc845]" started-at="2025-09-14T07:58:58 IST" name="setup" finished-at="2025-09-14T07:58:58 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Scenario3()[pri:0, instance:testSuite.PlayPageTestClass@319bc845]" started-at="2025-09-14T07:58:58 IST" name="Scenario3" finished-at="2025-09-14T08:00:52 IST" duration-ms="113810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario3 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.PlayPageTestClass@319bc845]" started-at="2025-09-14T08:00:52 IST" name="tearDown" finished-at="2025-09-14T08:00:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Scenario3 status=SUCCESS method=PlayPageTestClass.Scenario3()[pri:0, instance:testSuite.PlayPageTestClass@319bc845] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testSuite.PlayPageTestClass -->
       <class name="testSuite.CategoriesPageTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.CategoriesPageTestClass@53976f5c]" started-at="2025-08-10T13:07:21 IST" name="setup" finished-at="2025-08-10T13:07:21 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.CategoriesPageTestClass@4c5474f5]" started-at="2025-09-14T08:00:52 IST" name="setup" finished-at="2025-09-14T08:00:52 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Scenario2()[pri:0, instance:testSuite.CategoriesPageTestClass@53976f5c]" started-at="2025-08-10T13:07:21 IST" name="Scenario2" finished-at="2025-08-10T13:07:29 IST" duration-ms="7523" status="PASS">
+        <test-method signature="Scenario2()[pri:0, instance:testSuite.CategoriesPageTestClass@4c5474f5]" started-at="2025-09-14T08:00:52 IST" name="Scenario2" finished-at="2025-09-14T08:00:54 IST" duration-ms="2332" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$4EC20TVX.sendKeys(Unknown Source)
+at utils.CommonUtils.sendKeysOnElement(CommonUtils.java:119)
+at pages.CategoriesPage.sendKeysOnElement(CategoriesPage.java:47)
+at testSuite.CategoriesPageTestClass.Scenario2(CategoriesPageTestClass.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.CategoriesPageTestClass@4c5474f5]" started-at="2025-09-14T08:00:54 IST" name="tearDown" finished-at="2025-09-14T08:00:54 IST" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Scenario2 status=FAILURE method=CategoriesPageTestClass.Scenario2()[pri:0, instance:testSuite.CategoriesPageTestClass@4c5474f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testSuite.CategoriesPageTestClass -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

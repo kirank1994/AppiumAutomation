@@ -1,9 +1,13 @@
 package utils;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
+import java.util.Properties;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -13,7 +17,9 @@ import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.testng.ITestResult;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -24,6 +30,7 @@ import baseClass.Hooks;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 
 public class CommonUtils {
 	public static ExtentReports extent = new ExtentReports();
@@ -32,8 +39,19 @@ public class CommonUtils {
 	public static ExtentTest test;
 	public static ExtentTest node;
 	private static AppiumDriver driver;
+	public static String configFilePath = "src/test/resources/data.properties";
+	protected static final Logger logger = LogManager.getLogger(CommonUtils.class);
     public CommonUtils() {
         CommonUtils.driver= Hooks.getDriver();
+    }
+    public static String configReader(String filePath,String key) {
+      Properties  properties = new Properties();
+        try (FileInputStream fis = new FileInputStream(filePath)) {
+            properties.load(fis);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		return properties.getProperty(key);
     }
 	public static WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
 	public static void extentReports() {
@@ -69,6 +87,7 @@ public class CommonUtils {
     }
 	public void failure(String message)
 	{
+		logger.error(message);
 		node.log(Status.FAIL, message, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64(driver), "Failed image").build());
 
 	}
@@ -81,7 +100,7 @@ public class CommonUtils {
 	    swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
 	    swipe.addAction(finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), endX, endY));
 	    swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-
+	    
 	    driver.perform(Arrays.asList(swipe));
 	}
 	
@@ -90,6 +109,7 @@ public class CommonUtils {
 	{
 		WebElement ele=explicitWaitUntilClickable(element);
 		ele.click();
+		logger.info("Clicked On ["+elementName+"]");
 		node.info("Clicked On ["+elementName+"]");
 	}
 	
@@ -97,12 +117,14 @@ public class CommonUtils {
 	{
 		WebElement ele=explicitWaitVisibilityOf(element);
 		ele.sendKeys(sendKeys);
-		node.info("Clicked On ["+elementName+"]");
+		logger.info("Inputing"+"["+ sendKeys+"]"+"On["+elementName+"]");
+		node.info("Inputing"+"["+ sendKeys+"]"+"On["+elementName+"]");
 	}
 	
 	public void clearOnElement(WebElement element, String elementName)
 	{
 		WebElement ele=explicitWaitVisibilityOf(element);
+		logger.info("Clearing text on ["+elementName+"]");
 		ele.clear();
 		node.info("Clicked On ["+elementName+"]");
 	}
@@ -110,18 +132,24 @@ public class CommonUtils {
 	public void textOfElement(WebElement element, String elementName)
 	{
 		WebElement ele=explicitWaitVisibilityOf(element);
+		if(ele==null)
+		{
+			logger.error("Element ["+elementName+"] not found");
+			node.fail("Element ["+elementName+"] not found");
+			return;
+		}
 		String text=ele.getText();
 		node.info("Text On ["+elementName+"]:"+text);
 	}
 	
-	public void scrollUntilElement(String text, WebElement element, String elementName)
+	public void scrollUntilElement(String text, WebElement element)
 	{
-	    Hooks.getDriver().findElement(AppiumBy.androidUIAutomator(
+	    driver.findElement(AppiumBy.androidUIAutomator(
 	            "new UiScrollable(new UiSelector().scrollable(true))" +
 	            ".scrollIntoView(new UiSelector().text(\"" + text + "\"));"
 	        ));
+	    logger.info("Scrolled until element with text [" + text + "] is visible");
 		explicitWaitVisibilityOf(element);
-		node.info("Scroll until the ["+elementName+"]");
 	}
 	
 	public void implicttWait()
@@ -147,5 +175,25 @@ public class CommonUtils {
 	public static String message(String message) {
 		return "<b>" + message + "</b>";
 	}
+	
+	public static void testStatus(ITestResult result) {
+        System.out.println("Status of execution is:" + result.getStatus());
+        try {
+            if (result.getStatus() == ITestResult.SUCCESS) {
+                System.out.println("Test case execution status is SUCCESS");
+            } else if (result.getStatus() == ITestResult.FAILURE) {
+                AndroidDriver driver = (AndroidDriver) Hooks.getDriver();
+               
+                    driver.terminateApp("com.flipkart.android");
+                    driver.activateApp("com.flipkart.android");
+                
+                System.out.println("Test case execution status is FAILURE");
+            } else if (result.getStatus() == ITestResult.SKIP) {
+                System.out.println("Test case execution status is SKIP");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 	
 }

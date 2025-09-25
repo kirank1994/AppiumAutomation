@@ -43,7 +43,9 @@ public void clickOnBack() {
 	tapOnElement(back,"Back");	
 }
 public void sendKeysOnElement() {
-	sendKeysOnElement(textBox, "phones", "Send Keys");
+	String value=configReader(configFilePath, "InputSearchBar");
+	System.out.println("Value from properties file: " + value);
+	sendKeysOnElement(textBox, value, "Search Bar");
 	
 }
 public void clearOnElement() {
